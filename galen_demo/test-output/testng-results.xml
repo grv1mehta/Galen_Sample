@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" total="3" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="101811" started-at="2018-05-15T06:39:52Z" finished-at="2018-05-15T06:41:33Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="101811" started-at="2018-05-15T06:39:52Z" finished-at="2018-05-15T06:41:33Z">
+      <class name="com.galenframework.tests.SampleTest">
+        <test-method status="PASS" signature="initDriver([Ljava.lang.Object;)[pri:0, instance:com.galenframework.tests.SampleTest@523884b2]" name="initDriver" is-config="true" duration-ms="7776" started-at="2018-05-15T12:09:52Z" finished-at="2018-05-15T12:09:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@21a21c64]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method status="FAIL" signature="sampleTestOnDesktop(com.galenframework.components.BaseTest$TestDevice)[pri:0, instance:com.galenframework.tests.SampleTest@523884b2]" name="sampleTestOnDesktop" duration-ms="53267" started-at="2018-05-15T12:09:59Z" data-provider="desktop" finished-at="2018-05-15T12:10:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[desktop 1440x1024]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:397)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByCssSelector(RemoteWebDriver.java:496)
+	at org.openqa.selenium.By$ByCssSelector.findElements(By.java:441)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:351)
+	at com.galenframework.page.selenium.ByChain.findElement(ByChain.java:63)
+	at com.galenframework.page.selenium.SeleniumPage.driverFindElement(SeleniumPage.java:115)
+	at com.galenframework.page.selenium.SeleniumPage.locatorToElement(SeleniumPage.java:123)
+	at com.galenframework.page.selenium.SeleniumPage.getObject(SeleniumPage.java:89)
+	at com.galenframework.page.selenium.SeleniumPage.getObject(SeleniumPage.java:98)
+	at com.galenframework.validation.PageValidation.findPageElement(PageValidation.java:88)
+	at com.galenframework.validation.specs.SpecValidationAligned.check(SpecValidationAligned.java:30)
+	at com.galenframework.validation.specs.SpecValidationAligned.check(SpecValidationAligned.java:26)
+	at com.galenframework.validation.PageValidation.check(PageValidation.java:70)
+	at com.galenframework.validation.PageValidation.check(PageValidation.java:60)
+	at com.galenframework.validation.SectionValidation.checkObject(SectionValidation.java:165)
+	at com.galenframework.validation.SectionValidation.checkObjects(SectionValidation.java:75)
+	at com.galenframework.validation.SectionValidation.checkSection(SectionValidation.java:109)
+	at com.galenframework.validation.SectionValidation.checkPageSection(SectionValidation.java:54)
+	at com.galenframework.validation.SectionValidation.check(SectionValidation.java:47)
+	at com.galenframework.api.Galen.checkLayoutForPage(Galen.java:113)
+	at com.galenframework.api.Galen.checkLayout(Galen.java:86)
+	at com.galenframework.api.Galen.checkLayout(Galen.java:69)
+	at com.galenframework.api.Galen.checkLayout(Galen.java:59)
+	at com.galenframework.api.Galen.checkLayout(Galen.java:52)
+	at com.galenframework.api.Galen.checkLayout(Galen.java:141)
+	at com.galenframework.support.GalenJavaTestBase.checkLayout(GalenJavaTestBase.java:125)
+	at com.galenframework.support.GalenJavaTestBase.checkLayout(GalenJavaTestBase.java:111)
+	at com.galenframework.tests.SampleTest.sampleTestOnDesktop(SampleTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sampleTestOnDesktop -->
+        <test-method status="PASS" signature="initReport(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.galenframework.tests.SampleTest@523884b2]" name="initReport" is-config="true" duration-ms="0" started-at="2018-05-15T12:09:59Z" finished-at="2018-05-15T12:09:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.galenframework.tests.SampleTest.sampleTestOnDesktop(com.galenframework.components.BaseTest$TestDevice) throws java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@21a21c64]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initReport -->
+        <test-method status="PASS" signature="provideTestEndDate()[pri:0, instance:com.galenframework.tests.SampleTest@523884b2]" name="provideTestEndDate" is-config="true" duration-ms="0" started-at="2018-05-15T12:10:53Z" finished-at="2018-05-15T12:10:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- provideTestEndDate -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.galenframework.tests.SampleTest@523884b2]" name="quitDriver" is-config="true" duration-ms="1808" started-at="2018-05-15T12:10:53Z" finished-at="2018-05-15T12:10:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method status="PASS" signature="initDriver([Ljava.lang.Object;)[pri:0, instance:com.galenframework.tests.SampleTest@523884b2]" name="initDriver" is-config="true" duration-ms="6693" started-at="2018-05-15T12:10:54Z" finished-at="2018-05-15T12:11:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@7803bfd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method status="FAIL" signature="sampleTestOnMobile(com.galenframework.components.BaseTest$TestDevice)[pri:0, instance:com.galenframework.tests.SampleTest@523884b2]" name="sampleTestOnMobile" duration-ms="13040" started-at="2018-05-15T12:11:01Z" data-provider="mobile" finished-at="2018-05-15T12:11:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mobile 375x667]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:397)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByCssSelector(RemoteWebDriver.java:496)
+	at org.openqa.selenium.By$ByCssSelector.findElements(By.java:441)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:351)
+	at com.galenframework.page.selenium.ByChain.findElement(ByChain.java:63)
+	at com.galenframework.page.selenium.SeleniumPage.driverFindElement(SeleniumPage.java:115)
+	at com.galenframework.page.selenium.SeleniumPage.locatorToElement(SeleniumPage.java:123)
+	at com.galenframework.page.selenium.SeleniumPage.getObject(SeleniumPage.java:89)
+	at com.galenframework.page.selenium.SeleniumPage.getObject(SeleniumPage.java:98)
+	at com.galenframework.validation.PageValidation.findPageElement(PageValidation.java:88)
+	at com.galenframework.validation.specs.SpecValidationGeneral.check(SpecValidationGeneral.java:39)
+	at com.galenframework.validation.specs.SpecValidationInside.check(SpecValidationInside.java:37)
+	at com.galenframework.validation.specs.SpecValidationInside.check(SpecValidationInside.java:32)
+	at com.galenframework.validation.PageValidation.check(PageValidation.java:70)
+	at com.galenframework.validation.PageValidation.check(PageValidation.java:60)
+	at com.galenframework.validation.SectionValidation.checkObject(SectionValidation.java:165)
+	at com.galenframework.validation.SectionValidation.checkObjects(SectionValidation.java:75)
+	at com.galenframework.validation.SectionValidation.checkSection(SectionValidation.java:109)
+	at com.galenframework.validation.SectionValidation.checkPageSection(SectionValidation.java:54)
+	at com.galenframework.validation.SectionValidation.check(SectionValidation.java:47)
+	at com.galenframework.api.Galen.checkLayoutForPage(Galen.java:113)
+	at com.galenframework.api.Galen.checkLayout(Galen.java:86)
+	at com.galenframework.api.Galen.checkLayout(Galen.java:69)
+	at com.galenframework.api.Galen.checkLayout(Galen.java:59)
+	at com.galenframework.api.Galen.checkLayout(Galen.java:52)
+	at com.galenframework.api.Galen.checkLayout(Galen.java:141)
+	at com.galenframework.support.GalenJavaTestBase.checkLayout(GalenJavaTestBase.java:125)
+	at com.galenframework.support.GalenJavaTestBase.checkLayout(GalenJavaTestBase.java:111)
+	at com.galenframework.tests.SampleTest.sampleTestOnMobile(SampleTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sampleTestOnMobile -->
+        <test-method status="PASS" signature="initReport(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.galenframework.tests.SampleTest@523884b2]" name="initReport" is-config="true" duration-ms="0" started-at="2018-05-15T12:11:01Z" finished-at="2018-05-15T12:11:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.galenframework.tests.SampleTest.sampleTestOnMobile(com.galenframework.components.BaseTest$TestDevice) throws java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@7803bfd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initReport -->
+        <test-method status="PASS" signature="provideTestEndDate()[pri:0, instance:com.galenframework.tests.SampleTest@523884b2]" name="provideTestEndDate" is-config="true" duration-ms="0" started-at="2018-05-15T12:11:14Z" finished-at="2018-05-15T12:11:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- provideTestEndDate -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.galenframework.tests.SampleTest@523884b2]" name="quitDriver" is-config="true" duration-ms="1402" started-at="2018-05-15T12:11:14Z" finished-at="2018-05-15T12:11:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method status="PASS" signature="initDriver([Ljava.lang.Object;)[pri:0, instance:com.galenframework.tests.SampleTest@523884b2]" name="initDriver" is-config="true" duration-ms="6714" started-at="2018-05-15T12:11:16Z" finished-at="2018-05-15T12:11:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@42bc14c1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method status="PASS" signature="initReport(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.galenframework.tests.SampleTest@523884b2]" name="initReport" is-config="true" duration-ms="0" started-at="2018-05-15T12:11:22Z" finished-at="2018-05-15T12:11:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.galenframework.tests.SampleTest.sampleTestOnTablet(com.galenframework.components.BaseTest$TestDevice) throws java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@42bc14c1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initReport -->
+        <test-method status="FAIL" signature="sampleTestOnTablet(com.galenframework.components.BaseTest$TestDevice)[pri:0, instance:com.galenframework.tests.SampleTest@523884b2]" name="sampleTestOnTablet" duration-ms="9657" started-at="2018-05-15T12:11:22Z" data-provider="tablet" finished-at="2018-05-15T12:11:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tablet 800x1024]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:397)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByCssSelector(RemoteWebDriver.java:496)
+	at org.openqa.selenium.By$ByCssSelector.findElements(By.java:441)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:351)
+	at com.galenframework.page.selenium.ByChain.findElement(ByChain.java:63)
+	at com.galenframework.page.selenium.SeleniumPage.driverFindElement(SeleniumPage.java:115)
+	at com.galenframework.page.selenium.SeleniumPage.locatorToElement(SeleniumPage.java:123)
+	at com.galenframework.page.selenium.SeleniumPage.getObject(SeleniumPage.java:89)
+	at com.galenframework.page.selenium.SeleniumPage.getObject(SeleniumPage.java:98)
+	at com.galenframework.validation.PageValidation.findPageElement(PageValidation.java:88)
+	at com.galenframework.validation.specs.SpecValidationGeneral.check(SpecValidationGeneral.java:39)
+	at com.galenframework.validation.specs.SpecValidationInside.check(SpecValidationInside.java:37)
+	at com.galenframework.validation.specs.SpecValidationInside.check(SpecValidationInside.java:32)
+	at com.galenframework.validation.PageValidation.check(PageValidation.java:70)
+	at com.galenframework.validation.PageValidation.check(PageValidation.java:60)
+	at com.galenframework.validation.SectionValidation.checkObject(SectionValidation.java:165)
+	at com.galenframework.validation.SectionValidation.checkObjects(SectionValidation.java:75)
+	at com.galenframework.validation.SectionValidation.checkSection(SectionValidation.java:109)
+	at com.galenframework.validation.SectionValidation.checkPageSection(SectionValidation.java:54)
+	at com.galenframework.validation.SectionValidation.check(SectionValidation.java:47)
+	at com.galenframework.api.Galen.checkLayoutForPage(Galen.java:113)
+	at com.galenframework.api.Galen.checkLayout(Galen.java:86)
+	at com.galenframework.api.Galen.checkLayout(Galen.java:69)
+	at com.galenframework.api.Galen.checkLayout(Galen.java:59)
+	at com.galenframework.api.Galen.checkLayout(Galen.java:52)
+	at com.galenframework.api.Galen.checkLayout(Galen.java:141)
+	at com.galenframework.support.GalenJavaTestBase.checkLayout(GalenJavaTestBase.java:125)
+	at com.galenframework.support.GalenJavaTestBase.checkLayout(GalenJavaTestBase.java:111)
+	at com.galenframework.tests.SampleTest.sampleTestOnTablet(SampleTest.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sampleTestOnTablet -->
+        <test-method status="PASS" signature="provideTestEndDate()[pri:0, instance:com.galenframework.tests.SampleTest@523884b2]" name="provideTestEndDate" is-config="true" duration-ms="0" started-at="2018-05-15T12:11:32Z" finished-at="2018-05-15T12:11:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- provideTestEndDate -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.galenframework.tests.SampleTest@523884b2]" name="quitDriver" is-config="true" duration-ms="1438" started-at="2018-05-15T12:11:32Z" finished-at="2018-05-15T12:11:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.galenframework.tests.SampleTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

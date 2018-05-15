@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="LayoutTest(failed)" preserve-order="true">
+    <classes>
+      <class name="com.mckinsey.galenframework.tests.CareersHomePageTest">
+        <methods>
+          <include name="careersHomePageOnTablet"/>
+          <include name="careersHomePageOnMobile"/>
+          <include name="careersHomePageOnDesktop"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- com.mckinsey.galenframework.tests.CareersHomePageTest -->
+      <class name="com.mckinsey.galenframework.tests.JapanPageTest">
+        <methods>
+          <include name="japanProfilePageOnMobile"/>
+          <include name="japanProfilePageOnTablet"/>
+          <include name="quitDriver"/>
+          <include name="japanThreeUpModuleOnAllDevices"/>
+          <include name="japanProfilePageOnDesktop"/>
+        </methods>
+      </class> <!-- com.mckinsey.galenframework.tests.JapanPageTest -->
+      <class name="com.mckinsey.galenframework.tests.RtlValidationTest">
+        <methods>
+          <include name="rtlValidationOnMobile"/>
+          <include name="rtlValidationOnTablet"/>
+          <include name="rtlValidationOnDesktop"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- com.mckinsey.galenframework.tests.RtlValidationTest -->
+      <class name="com.mckinsey.galenframework.tests.UniversalHeaderPageTest">
+        <methods>
+          <include name="universalHeaderLeftOnDesktop"/>
+          <include name="universalHeaderCenterOnMobile"/>
+          <include name="universalHeaderCenterOnTablet"/>
+          <include name="universalHeaderLeftOnMobile"/>
+          <include name="universalHeaderLeftOnTablet"/>
+          <include name="quitDriver"/>
+          <include name="universalHeaderCenterOnDesktop"/>
+        </methods>
+      </class> <!-- com.mckinsey.galenframework.tests.UniversalHeaderPageTest -->
+      <class name="com.mckinsey.galenframework.tests.AccordianTest">
+        <methods>
+          <include name="accordianTestOnTablet"/>
+          <include name="accordianTestOnDesktop"/>
+          <include name="quitDriver"/>
+          <include name="accordianTestOnMobile"/>
+        </methods>
+      </class> <!-- com.mckinsey.galenframework.tests.AccordianTest -->
+      <class name="com.mckinsey.galenframework.tests.MarvinSpacingTest">
+        <methods>
+          <include name="homePageOnMobile"/>
+          <include name="homePageOnTablet"/>
+          <include name="digitalOurPeopleOnDesktop"/>
+          <include name="careersOurPeopleOnTablet"/>
+          <include name="sidebarBodyOnAlldevices"/>
+          <include name="noSpacingCollapsePageOnMobile"/>
+          <include name="articleTemplateOnDesktop"/>
+          <include name="standAlonePromoWithGlobalFooterOnMobile"/>
+          <include name="videoHeroOnMobile"/>
+          <include name="careersOurPeopleOnMobile"/>
+          <include name="stackableUPModulesOnDesktop"/>
+          <include name="promoBarWithQuoteAndVideoCModuleOnTablet"/>
+          <include name="universalHeroOnMobile"/>
+          <include name="multimediaHeroOnDesktop"/>
+          <include name="enhancedHeroIntroCopyOnDesktop"/>
+          <include name="noSpacingCollapsePageOnDesktop"/>
+          <include name="multimediaHeroOnOnMobile"/>
+          <include name="universalHeroOnTablet"/>
+          <include name="universalHeroOnDesktop"/>
+          <include name="imageCaptionOnDesktop"/>
+          <include name="enhancedHeroOnTablet"/>
+          <include name="promoBarWithQuoteAndVideoCModuleOnMobile"/>
+          <include name="careersInterviewingOnTablet"/>
+          <include name="fullTextCModuleOnMobile"/>
+          <include name="careersInterviewingOnMobile"/>
+          <include name="stackableUPModulesOnMobile"/>
+          <include name="imageCaptionOnTablet"/>
+          <include name="profileTemplateOnDesktop"/>
+          <include name="multimediaHeroOnOnTablet"/>
+          <include name="homePageOnDesktop"/>
+          <include name="digitalOurPeopleOnTablet"/>
+          <include name="noSpacingCollapsePageOnTablet"/>
+          <include name="collectionHeroOnMobile"/>
+          <include name="videoHeroOnDesktop"/>
+          <include name="enhancedHeroOnDesktop"/>
+          <include name="stackableUPModulesOnTablet"/>
+          <include name="imageCaptionOnMobile"/>
+          <include name="introCopyCOnDesktop"/>
+          <include name="sectionTitleOnAllDevices"/>
+          <include name="introCopyCOnMobile"/>
+          <include name="fullTextCModuleOnTablet"/>
+          <include name="articleTemplateOnTablet"/>
+          <include name="enhancedHeroOnMobile"/>
+          <include name="standAlonePromoWithGlobalFooterOnDesktop"/>
+          <include name="promoBarWithQuoteAndVideoCModuleOnDesktop"/>
+          <include name="collectionHeroOnDesktop"/>
+          <include name="articleTemplateOnMobile"/>
+          <include name="fullTextCModuleOnDesktop"/>
+          <include name="careersOurPeopleOnDesktop"/>
+          <include name="careersInterviewingOnDesktop"/>
+          <include name="introCopyCOnTablet"/>
+          <include name="standAlonePromoWithGlobalFooterOnTablet"/>
+          <include name="collectionHeroOnTablet"/>
+          <include name="ourInsightsOnDesktop"/>
+          <include name="videoHeroOnTablet"/>
+          <include name="quitDriver"/>
+          <include name="hoverBodyLinksOnAllDevices"/>
+          <include name="digitalOurPeopleOnMobile"/>
+        </methods>
+      </class> <!-- com.mckinsey.galenframework.tests.MarvinSpacingTest -->
+      <class name="com.mckinsey.galenframework.tests.CareersSearchPageTest">
+        <methods>
+          <include name="careersSearchPage_onDesktop"/>
+          <include name="careersSearchPage_onMobile"/>
+          <include name="quitDriver"/>
+          <include name="careersSearchPage_onTablet"/>
+        </methods>
+      </class> <!-- com.mckinsey.galenframework.tests.CareersSearchPageTest -->
+      <class name="com.mckinsey.galenframework.tests.HomePageTest">
+        <methods>
+          <include name="initDriver"/>
+          <include name="homePageOnDesktop"/>
+          <include name="quitDriver"/>
+          <include name="homePageOnMobile"/>
+          <include name="homePageOnTablet"/>
+        </methods>
+      </class> <!-- com.mckinsey.galenframework.tests.HomePageTest -->
+    </classes>
+  </test> <!-- LayoutTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

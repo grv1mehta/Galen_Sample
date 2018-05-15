@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite">
+
+	<test name="LayoutTest">
+		<classes>
+			<class name="com.mckinsey.galenframework.tests.HomePageTest" />
+			<class name="com.mckinsey.galenframework.tests.CareersSearchPageTest" />
+			<class name="com.mckinsey.galenframework.tests.CareersHomePageTest" />
+			<class name="com.mckinsey.galenframework.tests.MarvinSpacingTest" />
+			<class name="com.mckinsey.galenframework.tests.JapanPageTest" />
+			<class name="com.mckinsey.galenframework.tests.RtlValidationTest" />
+			<class name="com.mckinsey.galenframework.tests.UniversalHeaderPageTest" />
+			<class name="com.mckinsey.galenframework.tests.AccordianTest" />
+			<class name="com.mckinsey.galenframework.tests.BlogTest" />
+			<class name="com.mckinsey.galenframework.tests.CombinationsSpacingTest" />
+		</classes>
+	</test>
+
+</suite>  	
